@@ -15,5 +15,6 @@ ENV SLACK_CHANNEL="#monit"
 ENV SLACK_USERNAME="container-mysql-backup"
 ENV SLACK_EMOJI="package"
 ENV RSYNC_COMMAND="rsync -avz -e \"ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" %DIR% user@remote:/"
+ENV TS_FORMAT="%Y_%m_%d_%H_%M"
 
 CMD ["/run.sh"]
